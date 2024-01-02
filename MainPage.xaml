@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InformatinApp.MainPage">
+    <Grid>
+        <Image Source="background.jpg"
+               Aspect="Fill"/>
+        <ScrollView>
+            <Frame BackgroundColor="MintCream"
+                   HeightRequest="200"
+                   Margin="20"
+                   VerticalOptions="End"
+                   CornerRadius="50"
+                   Padding="10" >
+                <StackLayout>
+                    <Label Text="Hello!"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="10"/>
+                    <Label Text="Feastify: Your culinary companion for  "
+                           HorizontalOptions="Center"/>
+                    <Label Text="delicious and healthy recipes. "
+                           HorizontalOptions="Center"/>
+                    <Button BackgroundColor="DarkOrange" 
+                            HeightRequest="45" 
+                            WidthRequest="150" 
+                            Text="Explore Now" 
+                            FontSize="Medium" 
+                            CornerRadius="100"
+                            VerticalOptions="End"
+                            FontAttributes="Bold"
+                            Margin="30"
+                            Command="{Binding ButtonClickedCommand}"></Button>
+                </StackLayout>
+                
+            </Frame>
+        </ScrollView>
+    </Grid>
+   
+   
+</ContentPage>
